@@ -5,10 +5,23 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MyTest.TestExample"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="1000"
       Title="Six">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Text="Задача 6" VerticalAlignment="Top" Margin="8,8,0,0" FontSize="20"/>
+        <TextBlock Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0" FontSize="20">
+           Сельская малокомплектная школа находится в поселке Вершки. Петя Орлов живёт в деревне Дальнее.
+            Определите, какое минимальное расстояние ему надо пройти, чтобы добраться до школы:
+        </TextBlock>
+        <Image Grid.Column="1" RenderOptions.BitmapScalingMode="HighQuality" Source="/Resources/Test6.png" Margin="0,168,0,0" Height="232" VerticalAlignment="Top" />
+        <TextBox x:Name="answerTextBox" Loaded="Six_Loaded" Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="28" Margin="0,168,8,0"/>
+        <TextBlock Grid.Column="0" TextWrapping="Wrap" Text="Ответ" FontSize="20" VerticalAlignment="Top" Width="Auto" Margin="0,135,8,0"/>
+        <Button Grid.Column="0" Content="Сохранить ответ" Click="SaveAnswer_Click" FontSize="15" VerticalAlignment="Top" Width="Auto" Margin="0,205,8,0"/>
     </Grid>
 </Page>

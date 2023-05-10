@@ -9,13 +9,19 @@
       Title="Five">
 
     <Grid>
-        <TextBlock Text="Задача 1.5" VerticalAlignment="Top" Margin="447,8,420,0" FontSize="20"/>
-        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0" FontSize="20" Width="896" Height="98">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Text="Задача 5" VerticalAlignment="Top" Margin="8,8,0,0" FontSize="20"/>
+        <TextBlock Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0" FontSize="20">
             На рисунке — схема дорог, связывающих города А, Б, В, Г, Д, Е, Ж, З и И. По каждой дороге можно двигаться только в одном направлении, указанном стрелкой.<LineBreak/>
             Сколько существует различных путей из города А в город И, проходящих через город В?
         </TextBlock>
-        <Image RenderOptions.BitmapScalingMode="HighQuality" Source="/Resources/Test5.png" Margin="542,168,122,0" Height="232" VerticalAlignment="Top" />
-        <TextBox HorizontalAlignment="Left" Margin="97,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="28"/>
-        <TextBlock HorizontalAlignment="Left" Margin="36,169,0,0" TextWrapping="Wrap" Text="Ответ" FontSize="20" VerticalAlignment="Top"/>
+        <Image Grid.Column="1" RenderOptions.BitmapScalingMode="HighQuality" Source="/Resources/Test5.png" Margin="0,168,0,0" Height="232" VerticalAlignment="Top" />
+        <TextBox x:Name="answerTextBox" Loaded="Five_Loaded" Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="28" Margin="0,168,8,0"/>
+        <TextBlock Grid.Column="0" TextWrapping="Wrap" Text="Ответ" FontSize="20" VerticalAlignment="Top" Width="Auto" Margin="0,135,8,0"/>
+        <Button Grid.Column="0" Content="Сохранить ответ" Click="SaveAnswer_Click" FontSize="15" VerticalAlignment="Top" Width="Auto" Margin="0,205,8,0"/>
     </Grid>
 </Page>

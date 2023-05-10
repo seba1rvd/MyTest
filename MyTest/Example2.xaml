@@ -13,11 +13,11 @@
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,37,0,0" FontSize="20" Width="970">
             Между населёнными пунктами А, В, С, D, Е построены дороги, протяжённость которых (в километрах) приведена в таблице:
         </TextBlock>
-        <Image RenderOptions.BitmapScalingMode="HighQuality" Source="/Resources/Example2.png" Margin="639,85,56,0" Height="171" VerticalAlignment="Top" />
-        <TextBlock Text="Решение" VerticalAlignment="Top" Margin="483,278,455,0" FontSize="20"/>
-        <TextBlock VerticalAlignment="Top" Margin="92,110,455,0" FontSize="20" Height="121" TextWrapping="Wrap">
+        <TextBlock Margin="0 100,380,0" FontSize="20" TextWrapping="Wrap"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="593">
             Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
         </TextBlock>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Source="/Resources/Example2.png" Margin="639,85,56,0" Height="171" VerticalAlignment="Top" />
+        <TextBlock Text="Решение" VerticalAlignment="Top" Margin="483,278,455,0" FontSize="20"/>
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Margin="0,310,0,0" FontSize="20" Width="970" RenderTransformOrigin="0.5,0.5">
             Найдём все варианты маршрутов из A в E и выберем самый короткий.<LineBreak/>
             Из пункта A можно попасть в пункты B, С.<LineBreak/>

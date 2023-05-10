@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:MyTest"
         mc:Ignorable="d"
         Title="Тест" Height="600" Width="1000"        
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Closing="TestWindow_Closing">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -24,6 +25,7 @@
             <Button x:Name="Eight" Click="Eight_Click" Grid.Row="0" Content="8" Width="25" Height="25" HorizontalAlignment="Left" Margin="260 0 0 0" />
             <Button x:Name="Nine" Click="Nine_Click"  Grid.Row="0" Content="9" Width="25" Height="25" HorizontalAlignment="Left" Margin="295 0 0 0" />
             <Button x:Name="Ten" Click="Ten_Click" Grid.Row="0" Content="10" Width="25" Height="25" HorizontalAlignment="Left" Margin="330 0 0 0" />
+            <Button x:Name="Result" Click="Result_Click" Grid.Row="0" Content="Завершить тест" Width="155" Height="25" HorizontalAlignment="Left" Margin="365 0 0 0" />
         </Grid>
         <Grid Grid.Row="1">
             <Frame x:Name="MainContentFrame" Margin="10 0 10 15" NavigationUIVisibility="Hidden"/>
