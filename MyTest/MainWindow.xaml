@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyTest"
         mc:Ignorable="d"
-        Title="Меню" Height="67" Width="260"
+        Title="Меню" Height="84" Width="260"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Button x:Name="ExamplesOSolutions" Click="ExamplesOSolutions_Click" Content="Примеры решений" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Height="23" Width="119"/>
